@@ -1,0 +1,48 @@
+.jumbotron {
+  padding: 4rem 1rem; }
+  @media (min-width: 544px) {
+    .jumbotron {
+      padding: 6rem 2rem; } }
+
+.header .cta-wrapper,
+.footer .cta-wrapper {
+  margin: 35px 0 0; }
+  @media (min-width: 544px) {
+    .header .cta-wrapper,
+    .footer .cta-wrapper {
+      max-width: 200px;
+      margin: 35px auto 0; }
+      .header .cta-wrapper .btn,
+      .footer .cta-wrapper .btn {
+        display: block; } }
+
+@media (min-width: 544px) {
+  .header h1, .header h2, .header h3, .header h4, .header h5, .header h6,
+  .footer h1,
+  .footer h2,
+  .footer h3,
+  .footer h4,
+  .footer h5,
+  .footer h6 {
+    text-align: center; } }
+
+.main .model-card h1, .main .model-card h2, .main .model-card h3 {
+  margin-top: 0; }
+
+.model-header {
+  margin: 2rem 0; }
+
+.main {
+  margin-bottom: 35px; }
+  .main h3 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem; }
+  .main p {
+    line-height: 1.65; }
+  .main .col {
+    max-width: 700px; }
+
+.footer {
+  margin-bottom: 0; }
+
+/*# sourceMappingURL=index.css.map */

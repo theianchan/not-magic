@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+  <div class="row model-header">
+    <div class="col">
+      <h2>Linear Regression</h2>
+      <h1>Advertising Spend and Local Sales</h1>
+    </div>
+  </div>
+  <div class="row model-body">
+    <div class="col-xs col-lg-8">
+      <p>A sample of the dataset:</p>
+      {{ data.head|safe }}
+      <p>Correlation matrix:</p>
+      {{ data.corr|safe }}
+    </div>
+    <div class="col-xs col-lg-4">
+      <div class="card card-block">
+        <h3>About This Dataset</h3>
+        <p>This dataset shows sales of a particular product in 200 different markets, along with advertising budgets for the product in each of those markets for three different media: TV, radio, and newspaper.</p>
+        <p>This dataset (as far as I can tell) is from Introduction to Statistical Learning by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani. I see it all over the internet but no one seems to have the actual source.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

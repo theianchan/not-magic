@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="jumbotron header">
+  <h1 class="display-3">Not Magic</h1>
+  <h2>A Data Science Explainer Site</h2>
+  <div class="cta-wrapper">
+    <a href="{{ url_for('models') }}" role="button" class="btn btn-primary">DATA SCIENCE ME</a>
+  </div>
+</div>
+
+<div class="container main">
+  <div class="row flex-items-xs-center">
+    <div class="col">
+      <h3>What's going on here?</h3>
+      <p>Data science is everywhere these days. Your boss wants to know if you can do it. Your investors won't fund you unless you have it. Your significant other just left you because they read in some no-name publication that <a href="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century">data scientists are sexy</a>. What's a non-data scientist to do?</p>
+      <p>This site aims to break down the barriers between human and data scientist. To make the mysterious workings of data science a little more accessible.</p>
+      <h3>Has this ever happened to you?</h3>
+      <blockquote class="blockquote">
+        You: Hey there, Patel, I sure see you just hanging out in front of your computer doing nothing a lot.
+        <br> Data Scientist: I'm training my model with a boosted random forest classifier. You wouldn't understand.
+      </blockquote>
+      <p>We live in a world where data scientists wield their fancy language like magic spells, lording their arcane knowledge of algorithms over honest, hard-working people like you and me.</p>
+      <p>We've been kept outside the walls of Hogwarts for too long, my muggle brothers and sisters.</p>
+      <p>This ends now.</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron footer">
+  <h3 class="display-4">Show Those Data Snobs</h3>
+  <h3>You Can Learn Fancy Words Too</h3>
+  <div class="cta-wrapper">
+    <a href="{{ url_for('models') }}" role="button" class="btn btn-primary">DATA SCIENCE ME</a>
+  </div>
+</div>
+
+{#
+<div class="row">
+  <div class="column small-12">
+    <div class="callout">
+      <h1>Data: {{ data.name }}</h1>
+      <p>From: {{ data.url }}</p>
+      {{ data.table|safe }}
+    </div>
+  </div>
+</div> #}
+
+{% endblock %}

@@ -1,0 +1,66 @@
+$small  : 544px;
+$medium : 768px;
+$large  : 992px;
+$x-large: 1200px;
+
+.jumbotron {
+  padding: 4rem 1rem;
+  @media (min-width: $small) {
+    padding: 6rem 2rem;
+  }
+}
+
+.header,
+.footer {
+  .cta-wrapper {
+    margin: 35px 0 0;
+    @media (min-width: $small) {
+      max-width: 200px;
+      margin: 35px auto 0;
+      .btn {
+        display: block;
+      }
+    }
+  }
+}
+
+.header,
+.footer {
+  @media (min-width: $small) {
+    h1, h2, h3, h4, h5, h6 {
+      text-align: center;
+    }
+  }
+}
+
+.main .model-card {
+  h1, h2, h3 {
+    margin-top: 0;
+  }
+}
+
+.model-header {
+  margin: 2rem 0;
+}
+
+.model-body {
+
+}
+
+.main {
+  margin-bottom: 35px;
+  h3 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+  p {
+    line-height: 1.65
+  }
+  .col {
+    max-width: 700px;
+  }
+}
+
+.footer {
+  margin-bottom: 0;
+}
