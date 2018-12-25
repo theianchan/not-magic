@@ -22,7 +22,7 @@ def model():
   ad_data = pd.read_csv(url)
 
   data = {}
-  data['head'] = ad_data.head().to_html(classes='table table-striped table-bordered')
+  data['head'] = ad_data[1:4].to_html(classes='table table-striped table-bordered')
   data['corr'] = ad_data.corr().to_html(classes='table table-striped table-bordered')
   return render_template('model.html', data=data)
 

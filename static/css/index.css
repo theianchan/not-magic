@@ -30,7 +30,14 @@
   margin-top: 0; }
 
 .model-header {
-  margin: 2rem 0; }
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.model-nav {
+  margin-bottom: 2rem; }
+
+.model-body {
+  margin-bottom: 2rem; }
 
 .main {
   margin-bottom: 35px; }

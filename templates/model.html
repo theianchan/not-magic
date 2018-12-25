@@ -4,30 +4,41 @@
 <div class="container">
   <div class="row model-header">
     <div class="col">
-      <h2>Linear Regression</h2>
-      <h1>Advertising Spend and Sales</h1>
+      <h1>Linear Regression | Marketing Spend and Sales</h1>
     </div>
   </div>
-  <div class="row model-body">
-    <div class="col-xs col-lg-8">
-      <div class="card card-block">
-        <h3>What am I looking at?</h3>
-        <p>Imagine that you're the marketing director in charge of promoting Kanye's Yeezy Season 4 collection. Also imagine that we live in some alternative universe where Kanye actually needs a marketing director and the collection doesn't just sell out automatically the day it comes out.</p>
-        <p>The Yeezy Season 4 collection is available in 200 stores, and you've been spending your marketing budget in 3 main channels:</p>
-        <ul>
-          <li>Billboards</li>
-          <li>Sponsored Content</li>
-          <li>Celebrity Twitter Fights</li>
-        </ul>
-      </div>
-      <p>You've been recording your spend by channel for each store, and you're going over the results:</p>
-      {{ data.head|safe }}
-      {# <p>Correlation matrix:</p>
-      {{ data.corr|safe }} #}
+  <div class="row model-nav">
+    <div class="col">
+      <nav class="nav nav-inline">
+        <a href="#" class="nav-link active">Introduction</a>
+        <a href="#" class="nav-link disabled">Correlations</a>
+        <a href="#" class="nav-link disabled">Regression, Part I</a>
+        <a href="#" class="nav-link disabled">Regression, Part II</a>
+      </nav>
     </div>
-    <div class="col-xs col-lg-4">
-      <div class="card card-block">
-        <p>This dataset is adapted from Introduction to Statistical Learning by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani.</p>
+  </div>
+  <div class="model-body">
+    <div class="row">
+      <div class="col-xs col-lg-8">
+        <div class="card card-block">
+          <h3>What am I looking at?</h3>
+          <p>Imagine that you're the marketing director in charge of promoting Kanye's Yeezy Season 4 collection. Also imagine that we live in some alternative universe where Kanye actually needs a marketing director and the collection doesn't just sell out automatically the day it comes out.</p>
+          <p>The Yeezy Season 4 collection is available in 200 stores, and you've been spending your marketing budget in 3 main channels:</p>
+          <ul>
+            <li>Billboards</li>
+            <li>Sponsored Content</li>
+            <li>Celebrity Twitter Fights</li>
+          </ul>
+        </div>
+        <p>You've collected a dataset of spend by channel for each store, and the resulting sales:</p>
+        {{ data.head|safe }}
+        <p>According to the table, you spent $44.5MM on billboards, $39.3MM on sponsored content, and $45.1MM on celebrity Twitter fights promoting store 1, and the store generated $10.4MM in sales.</p>
+      </div>
+      <div class="col-xs col-lg-4">
+        <div class="card card-block">
+          <p><small>The marketing spend and sales dataset is adapted from Introduction to Statistical Learning by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani.</small></p>
+        </div>
+        <a href="#" class="btn btn-primary btn-block">Next</a>
       </div>
     </div>
   </div>
